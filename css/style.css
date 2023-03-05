@@ -76,8 +76,12 @@ nav{
 
 }
 .box-bg{
-    background-color: #ece8e1;
-    border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  padding: 20px;
 }
 main{
     color: #4c0404;
@@ -92,7 +96,7 @@ main{
     margin: auto;
 }
 .box-model p{
-    color: #CD3F3E;
+    color: #FF9C91;
 }
 .box-bg img:hover{
     transition: 500ms ease-in-out 0.5s;
@@ -136,8 +140,7 @@ main{
 }
 
 .demo-bg {
-display: none;
-  opacity: 0.8;
+  opacity: 0.05;
   position: absolute;
   left: 0;
   top: 0;
@@ -164,4 +167,42 @@ backdrop-filter: blur(5.5px);
 .collab-text p{
   width: 60%;
   margin: auto;
+}
+section{
+  position: relative;
+}
+
+@media screen and (min-width: 995px) {
+  .ca-desc{
+    position: relative;
+    bottom: 15px;
+  }
+}
+.footer-container{
+  background-color: #27303E;
+  color: #fff;
+}
+
+
+@media (max-width: 995px) and (min-width: 300px)     {
+  #video-sec{
+    padding-top:30px;
+  } 
+  video{
+    width: 25rem;
+    height: 15rem;
+
+  }
+  .facts-box{
+    margin: 5px;
+  }
+  .fact-logo{
+    display: none;
+  }
+  .collab-text p{
+    width: 96%;
+  }
+  .logo-box{
+    margin: 5px;
+  }
 }
