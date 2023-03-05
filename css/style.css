@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+  /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    background: #F8EDE3;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+*{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+nav{
+    background: #f6f6f6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+.navbar-brand{
+    position: relative;
+    left: 11rem;
+}
+.box-model{
+    width: 17rem;
+
+}
+.box-bg{
+    background-color: #ece8e1;
+    border-radius: 20px;
+}
+main{
+    color: #4c0404;
+    background: #f6f6f6;
+}
+.header-carousel .container{
+    width: 76%;
+    
+}
+.about-us{
+    width: 76%;
+    margin: auto;
+}
+.box-model p{
+    color: #CD3F3E;
+}
+.box-bg img:hover{
+    transition: 500ms ease-in-out 0.5s;
+    transform: scale(1.1);
+    
+}
+.button{
+  border: 1px solid #CD3F3E;
+  background-color: transparent;
+  color: #CD3F3E;
+  border-radius: 40px;
+}
+.button:hover{
+  transition: 500ms ease-in-out 0.5s;
+  background-color: #CD3F3E;
+  color: #fff;
+}
+.video-sec{
+  width: 76%;
+  margin: auto;
+
+}
+
+@media screen and (min-width: 995px) {
+  .down{
+    position: relative;
+    top: 20px;
+  } 
+}
+.our-facts{
+  position: relative;
+  padding: 40px;
+  width: 76%;
+  margin: auto;
+
+
+}
+.bg-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-bg {
+display: none;
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.facts-box{
+
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+}
+.logo-box{
+  background-color: #fff;
+  width: 15rem;
+  padding: 40px;
+}
+.logo-box img{
+  width: 10rem;
+}
+.collab-text p{
+  width: 60%;
+  margin: auto;
+}
