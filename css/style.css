@@ -137,6 +137,7 @@ main{
 .bg-wrap {
   overflow: hidden;
   position: relative;
+  
 }
 
 .demo-bg {
@@ -217,4 +218,14 @@ section{
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+.header-hero{
+
+  background: #EAE9C9;
+  width: 75rem;
+  height: 40rem;
+  border-radius: 20px;
+}
+.hero-cont{
+position: relative;
 }
