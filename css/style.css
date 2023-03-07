@@ -1,84 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
-  /*
+/*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     3. Allow percentage-based heights in the application
   */
-  html, body {
-    height: 100%;
-  }
-  /*
+html,
+body {
+  height: 100%;
+}
+/*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
-    background: #F8EDE3;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
+body {
+  background: #f8ede3;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
     6. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     7. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     8. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     9. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-  a{
-    text-decoration: none;
-  }
-
-*{
-
-    font-family: 'Montserrat', sans-serif;
-
+#root,
+#__next {
+  isolation: isolate;
 }
-nav{
-    background: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+a {
+  text-decoration: none;
+}
 
+* {
+  font-family: "Montserrat", sans-serif;
 }
-.navbar-brand{
-    position: relative;
-    left: 11rem;
+nav {
+  background: #f6f6f6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
-.box-model{
-    width: 17rem;
-
+.navbar-brand {
+  position: relative;
+  left: 11rem;
 }
-.box-bg{
+.box-model {
+  width: 17rem;
+}
+.box-bg {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -86,61 +97,54 @@ nav{
   -webkit-backdrop-filter: blur(5.5px);
   padding: 20px;
 }
-main{
-    color: #4c0404;
-    background: #f6f6f6;
+main {
+  color: #4c0404;
+  background: #f6f6f6;
 }
-.header-carousel .container{
-    width: 76%;
-    
+.header-carousel .container {
+  width: 76%;
 }
-.about-us{
-    width: 76%;
-    margin: auto;
+.about-us {
+  width: 76%;
 }
-.box-model p{
-    color: #FF9C91;
+.box-model p {
+  color: black;
 }
-.box-bg img:hover{
-    transition: 500ms ease-in-out 0.5s;
-    transform: scale(1.1);
-    
+.box-bg img:hover {
+  transition: 500ms ease-in-out 0.5s;
+  transform: scale(1.1);
 }
-.button{
-  border: 1px solid #CD3F3E;
+.button {
+  border: 1px solid #cd3f3e;
   background-color: transparent;
-  color: #CD3F3E;
+  color: #cd3f3e;
   border-radius: 40px;
 }
-.button:hover{
+.button:hover {
   transition: 500ms ease-in-out 0.5s;
-  background-color: #CD3F3E;
+  background-color: #cd3f3e;
   color: #fff;
 }
-.video-sec{
+.video-sec {
   width: 76%;
-  margin: auto;
 
 }
 
 @media screen and (min-width: 995px) {
-  .down{
+  .down {
     position: relative;
     top: 20px;
-  } 
+  }
 }
-.our-facts{
+.our-facts {
   position: relative;
   padding: 40px;
   width: 76%;
-  margin: auto;
-
 
 }
 .bg-wrap {
   overflow: hidden;
   position: relative;
-  
 }
 
 .demo-bg {
@@ -152,83 +156,128 @@ main{
   height: auto;
 }
 
-.facts-box{
-
-background: rgba(255, 255, 255, 0.1);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.5px);
--webkit-backdrop-filter: blur(5.5px);
+.facts-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
 }
-.logo-box{
+.logo-box {
   background-color: #fff;
   width: 15rem;
   padding: 40px;
 }
-.logo-box img{
+.logo-box img {
   width: 10rem;
 }
-.collab-text p{
+.collab-text p {
   width: 60%;
-  margin: auto;
+
 }
-section{
+section {
   position: relative;
 }
 
 @media screen and (min-width: 995px) {
-  .ca-desc{
+  .ca-desc {
     position: relative;
     bottom: 15px;
   }
 }
-.footer-container{
-  background-color: #27303E;
+.footer-container {
+  background-color: #27303e;
   color: #fff;
 }
 
-
-@media (max-width: 995px) and (min-width: 300px)     {
-  #video-sec{
-    padding-top:30px;
-  } 
-  video{
+@media (max-width: 995px) and (min-width: 300px) {
+  #video-sec {
+    padding-top: 30px;
+  }
+  video {
     width: 25rem;
     height: 15rem;
-
   }
-  .facts-box{
+  .facts-box {
     margin: 5px;
   }
-  .fact-logo{
+  .fact-logo {
     display: none;
   }
-  .collab-text p{
+  .collab-text p {
     width: 96%;
   }
-  .logo-box{
+  .logo-box {
     margin: 5px;
+  }
+  .header-carousel {
+    width: 40rem;
+    position: relative;
+    right: 5rem;
+    padding-top: 2rem;
+  }
+
+  .nav-logo {
+    position: relative;
+    right: 6rem;
+  }
+  .about-us {
+    width: 85%;
+    margin: 20px;
+  }
+  .box-model{
+    width: 100%;
+    
+  }
+  .grid-box {
+    margin-top: 20px;
+    
+  }
+  .video-sec {
+    width: 86%;
+    margin: 20px;
+  
+  }
+  .our-facts{
+    width: 98%;
+    
+
+  }
+  .collabs{
+    width: 98%;
+  }
+  .logo-box {
+    background-color: #fff;
+    width: 10rem;
+    padding: 30px;
+  }
+  .logo-box img {
+    width: 8rem;
+  }
+  
+  .logo-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0);
   opacity: 1;
 }
-.header-hero{
-
-  background: #EAE9C9;
-  width: 75rem;
-  height: 40rem;
+.header-hero {
+  background: #eae9c9;
+  width: 72rem;
+  height: 35rem;
   border-radius: 20px;
 }
-.hero-cont{
-position: relative;
+.hero-cont {
+  position: relative;
 }
