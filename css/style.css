@@ -287,7 +287,6 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-<<<<<<< HEAD
 @media only screen and (max-width: 576px) {
   .card {
     margin:10px auto;
@@ -344,5 +343,3 @@ section {
   align-items: center;
   height: 100%;
 }
-=======
->>>>>>> f8fa65883e4598c53996430281792e61106badd4
