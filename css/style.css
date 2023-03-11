@@ -84,7 +84,7 @@ nav {
 }
 .navbar-brand {
   position: relative;
-  left: 11rem;
+  /* left: 11rem; */
 }
 .box-model {
   width: 17rem;
@@ -127,20 +127,20 @@ main {
 }
 .video-sec {
   width: 76%;
-
 }
 
-@media screen and (min-width: 995px) {
-  .down {
-    position: relative;
-    top: 20px;
-  }
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1.2rem;
+  column-gap: 1.2rem;
+  margin-top: 25px;
 }
+
 .our-facts {
   position: relative;
   padding: 40px;
   width: 76%;
-
 }
 .bg-wrap {
   overflow: hidden;
@@ -163,102 +163,20 @@ main {
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
 }
-.logo-box {
-  background-color: #fff;
-  width: 15rem;
-  padding: 40px;
-}
+
 .logo-box img {
-  width: 10rem;
+  width: 60%;
 }
 .collab-text p {
   width: 60%;
-
 }
 section {
   position: relative;
 }
 
-@media screen and (min-width: 995px) {
-  .ca-desc {
-    position: relative;
-    bottom: 15px;
-  }
-}
 .footer-container {
   background-color: #27303e;
   color: #fff;
-}
-
-@media (max-width: 995px) and (min-width: 300px) {
-  #video-sec {
-    padding-top: 30px;
-  }
-  video {
-    width: 25rem;
-    height: 15rem;
-  }
-  .facts-box {
-    margin: 5px;
-  }
-  .fact-logo {
-    display: none;
-  }
-  .collab-text p {
-    width: 96%;
-  }
-  .logo-box {
-    margin: 5px;
-  }
-  .header-carousel {
-    width: 40rem;
-    position: relative;
-    right: 5rem;
-    padding-top: 2rem;
-  }
-
-  .nav-logo {
-    position: relative;
-    right: 6rem;
-  }
-  .about-us {
-    width: 85%;
-    margin: 20px;
-  }
-  .box-model{
-    width: 100%;
-    
-  }
-  .grid-box {
-    margin-top: 20px;
-    
-  }
-  .video-sec {
-    width: 86%;
-    margin: 20px;
-  
-  }
-  .our-facts{
-    width: 98%;
-    
-
-  }
-  .collabs{
-    width: 98%;
-  }
-  .logo-box {
-    background-color: #fff;
-    width: 10rem;
-    padding: 30px;
-  }
-  .logo-box img {
-    width: 8rem;
-  }
-  
-  .logo-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .reveal {
@@ -280,4 +198,148 @@ section {
 }
 .hero-cont {
   position: relative;
+}
+
+/* Team container  */
+
+.team-grid-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.2rem;
+  column-gap: 1.2rem;
+}
+
+/* Media Queries  */
+
+@media screen and (min-width: 995px) {
+  .down {
+    position: relative;
+    top: 20px;
+  }
+  .ca-desc {
+    position: relative;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 995px) and (min-width: 300px) {
+  html {
+    font-size: 80%;
+  }
+  #video-sec {
+    padding-top: 30px;
+  }
+  video {
+    width: 25rem;
+    height: 15rem;
+  }
+  .facts-box {
+    margin: 5px;
+  }
+  .fact-logo {
+    display: none;
+  }
+  .collab-text p {
+    width: 96%;
+  }
+
+  .header-carousel {
+    margin-top: 40px;
+  }
+
+  .nav-logo {
+    position: relative;
+    /* right: 6rem; */
+  }
+  .about-us {
+    width: 85%;
+    margin: 20px;
+  }
+  .box-model {
+    width: 100%;
+  }
+  .grid-box {
+    margin-top: 20px;
+  }
+  .video-sec {
+    width: 86%;
+    margin: 20px;
+  }
+  .our-facts {
+    width: 98%;
+  }
+  .collabs {
+    width: 98%;
+  }
+
+  .logo-box img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+
+  /* Created this team grid  */
+  .team-grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .card {
+    margin:10px auto;
+    width: 25rem;
+  }
+  .circle {
+    height: 2.8rem;
+    font-weight: bold;
+    width: 2.8rem;
+    display: table;
+
+    margin: 2px auto;
+  }
+}
+.card-body {
+  display: flex;
+}
+.block {
+  text-align: center;
+  vertical-align: middle;
+}
+.circle {
+  background: red;
+  border-radius: 200px;
+  color: white;
+  height: 3.438rem;
+  font-weight: bold;
+  width: 3.438rem;
+  display: table;
+  margin: 2px auto;
+}
+.circle p {
+  vertical-align: middle;
+  display: table-cell;
+}
+.bg-custom-1 {
+  background: rgba(255, 255, 255, 0.1)!important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+}
+.card-text{
+  font-size: 15px;
+}
+@media only screen and (min-width:576px){
+  .card{
+    width: 20rem;
+  }
+}
+.logo-box{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
