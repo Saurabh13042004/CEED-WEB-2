@@ -343,3 +343,14 @@ section {
   align-items: center;
   height: 100%;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  border: 1px solid #cd3f3e !important;
+  background-color: transparent;
+  color: #cd3f3e;
+  border-radius: 40px;
+}
+#pills-tab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
